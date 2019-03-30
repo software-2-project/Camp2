@@ -12,22 +12,22 @@
 			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li class="selected">
-					<a href="index.html"><span>H</span>ome</a>
+					<a href="index.php"><span>H</span>ome</a>
 				</li>
 				<li>
-					<a href="about.html"><span>A</span>bout</a>
+					<a href="about.php"><span>A</span>bout</a>
 				</li>
 				<li>
-					<a href="programs.html"><span>P</span>rograms</a>
+					<a href="programs.php"><span>P</span>rograms</a>
 				</li>
 				<li>
-					<a href="blog.html"><span>B</span>log</a>
+					<a href="blog.php"><span>B</span>log</a>
 				</li>
 				<li>
-					<a href="staff.html"><span>S</span>taff</a>
+					<a href="staff.php"><span>S</span>taff</a>
 				</li>
 				<li>
-					<a href="contact.html"><span>C</span>ontact</a>
+					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
 			</ul>
 			<div>
@@ -38,6 +38,10 @@
 		</div>
 	</div>
 	<div class="body">
+	   <?php
+		include '../Controller/cont.php';
+		?>
+
 		<div>
 			<div class="featured">
 				<img src="images/camping.jpg" alt="">
@@ -47,7 +51,7 @@
 						<p>
 							You can remove any link to our website from this website template, you're free to use this website template without linking back to us
 						</p>
-						<a href="register.html">REGISTER NOW!</a>
+						<a href="register.php">REGISTER NOW!</a>
 					</div>
 				</div>
 			</div>
@@ -146,7 +150,7 @@
 				<p>
 					Nulla porttitor vulputate elit, trist ique malesuada sem.
 				</p>
-				<form action="index.html">
+				<form action="index.php">
 					<input type="text" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
 					<input type="submit" value="Get">
 				</form>
@@ -156,19 +160,19 @@
 				<ul>
 					<li>
 						<p>
-							<a href="blog.html">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
+							<a href="blog.php">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
 						</p>
 						<span>11/07/2011</span>
 					</li>
 					<li>
 						<p>
-							<a href="blog.html">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
+							<a href="blog.php">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
 						</p>
 						<span>11/03/2011</span>
 					</li>
 					<li>
 						<p>
-							<a href="blog.html">Cum sociis natoque penatibus et magnis dis parturient.</a>
+							<a href="blog.php">Cum sociis natoque penatibus et magnis dis parturient.</a>
 						</p>
 						<span>11/27/2011</span>
 					</li>

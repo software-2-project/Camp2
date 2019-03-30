@@ -9,25 +9,25 @@
 <body>
 	<div class="header">
 		<div>
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li>
-					<a href="index.html"><span>H</span>ome</a>
+					<a href="index.php"><span>H</span>ome</a>
 				</li>
 				<li>
-					<a href="about.html"><span>A</span>bout</a>
+					<a href="about.php"><span>A</span>bout</a>
 				</li>
 				<li class="selected">
-					<a href="programs.html"><span>P</span>rograms</a>
+					<a href="programs.php"><span>P</span>rograms</a>
 				</li>
 				<li>
-					<a href="blog.html"><span>B</span>log</a>
+					<a href="blog.php"><span>B</span>log</a>
 				</li>
 				<li>
-					<a href="staff.html"><span>S</span>taff</a>
+					<a href="staff.php"><span>S</span>taff</a>
 				</li>
 				<li>
-					<a href="contact.html"><span>C</span>ontact</a>
+					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
 			</ul>
 			<div>
@@ -46,13 +46,13 @@
 						<div class="first">
 							<ul>
 								<li>
-									<a href="programs.html">OUR MISSION</a>
+									<a href="programs.php">OUR MISSION</a>
 								</li>
 								<li>
-									<a href="competition.html">TEAM COMPETITION</a>
+									<a href="competition.php">TEAM COMPETITION</a>
 								</li>
 								<li class="selected">
-									<a href="activities.html">ACTIVITIES</a>
+									<a href="activities.php">ACTIVITIES</a>
 								</li>
 							</ul>
 						</div>
@@ -133,7 +133,7 @@
 				<p>
 					Nulla porttitor vulputate elit, trist ique malesuada sem.
 				</p>
-				<form action="index.html">
+				<form action="index.php">
 					<input type="text" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
 					<input type="submit" value="Get">
 				</form>
@@ -143,19 +143,19 @@
 				<ul>
 					<li>
 						<p>
-							<a href="blog.html">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
+							<a href="blog.php">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
 						</p>
 						<span>11/07/2011</span>
 					</li>
 					<li>
 						<p>
-							<a href="blog.html">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
+							<a href="blog.php">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
 						</p>
 						<span>11/03/2011</span>
 					</li>
 					<li>
 						<p>
-							<a href="blog.html">Cum sociis natoque penatibus et magnis dis parturient.</a>
+							<a href="blog.php">Cum sociis natoque penatibus et magnis dis parturient.</a>
 						</p>
 						<span>11/27/2011</span>
 					</li>
