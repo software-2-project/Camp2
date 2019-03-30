@@ -1401,3 +1401,121 @@ p a:hover {
 	width:900px;
 	font-family: 'forumregular';
 }
+
+
+
+
+
+/*------------------------Register and Login ------------------------*/
+.registerBody
+{
+ background:url(../images/bgg-body.jpg);
+    background-color: black;
+    background-blend-mode: screen;
+    background-size: cover;
+    
+}
+
+.container{
+  height: 500px;
+   width: 600px;
+  
+   
+}
+
+.leftDiv
+{
+   
+    height: 100%;
+    width: 250px;
+    background: #ff8000;
+    color: #fff;
+    font-size: 50px;
+    padding: 20px;
+    margin-right: -6px;
+    
+}
+.haveAcount
+{
+  color: rgba(255,255,255,0.7);  
+  font-size: 13px; 
+  cursor: pointer;
+  text-decoration: underline;
+    
+}
+
+.register
+{
+    background-color: rgba(0,0,0,0.7);
+   
+    height: 100%;
+    width: 350px;
+    padding-bottom:   20px;
+    padding-top: 50px;
+    padding-left: -10;
+        
+}
+
+
+.TF
+{
+   background-color: rgba(255,255,255);
+    height: 15px;
+    width: 250px;
+    padding-left: 3px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    
+    
+    border: 5px;
+    border-color:  #ff8000;
+    margin-left: 20px;
+   
+    
+}
+
+
+.submitRegister
+{
+  height: 50px;
+  width: 280px; 
+  background:   #ff8000;
+  margin-bottom: 10px;
+ border-radius: 7px;
+    border-color: #ff8000;
+ margin-left: 20px;
+font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.submitRegister  hover
+{
+  background: #fff  ;
+     color: #ff9900;
+}
+.login
+{
+    height: 500px;
+    width: 300px;
+    background: #ff8000;
+    color: #fff;
+    font-size: 50px;
+    padding: 20px;
+    margin-right: -6px; 
+    border-radius: 8px;
+}
+.submitLogin
+{
+  height: 50px;
+  width: 280px; 
+  background: #fff  ;
+  margin-bottom: 10px;
+ border-radius: 7px;
+border-color: #ff8000;
+ margin-left: 20px;
+font-size: 20px;
+    color: #ff8000;
+    cursor: pointer;  
+}
+
