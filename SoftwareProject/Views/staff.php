@@ -12,22 +12,22 @@
 			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li>
-					<a href="index.html"><span>H</span>ome</a>
+					<a href="index.php"><span>H</span>ome</a>
 				</li>
 				<li>
-					<a href="about.html"><span>A</span>bout</a>
+					<a href="about.php"><span>A</span>bout</a>
 				</li>
 				<li>
-					<a href="programs.html"><span>P</span>rograms</a>
+					<a href="programs.php"><span>P</span>rograms</a>
 				</li>
 				<li>
-					<a href="blog.html"><span>B</span>log</a>
+					<a href="blog.php"><span>B</span>log</a>
 				</li>
 				<li class="selected">
-					<a href="staff.html"><span>S</span>taff</a>
+					<a href="staff.php"><span>S</span>taff</a>
 				</li>
 				<li>
-					<a href="contact.html"><span>C</span>ontact</a>
+					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
 			</ul>
 			<div>
@@ -43,15 +43,7 @@
 				<div>
 					<div class="staff">
 						<h2>SUMMER CAMP STAFF</h2>
-						<div class="first">
-							<h3><span>S</span>taff <span>L</span>ogin</h3>
-							<form action="index.html">
-								<input type="text" value="Username" onblur="this.value=!this.value?'Username':this.value;" onfocus="this.select()" onclick="this.value='';">
-								<input type="password" value="">
-								<a href="#">Forgot your password?</a>
-								<input type="submit" id="submit" value="Login">
-							</form>
-						</div>
+						
 						<div>
 							<h3>This is just a place holder</h3>
 							<p>
@@ -82,7 +74,7 @@
 							<p>
 								Cras congue ante nec orci volutpat non aliquet nisl interdum. Integer gravida, felis eget posuere pellentesque, ligula libero porta lacus, nec ultrices arcu lectus et metus. Aenean quis tortor neque, in accumsan erat. Aliquam diam massa dignissim a ultricies sagittis.
 							</p>
-							<a href="application.html">Apply Now</a>
+							<a href="register.php">Apply Now</a>
 						</div>
 					</div>
 				</div>

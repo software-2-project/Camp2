@@ -2,9 +2,9 @@
 
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
     <br><br><br>
 <body class="registerBody">
@@ -12,16 +12,23 @@
     
 
     
-          
+          <?php
+            include '../controller/cont.php';
+        ?>
 
-			
+            
  <!-----------Right Side-------------->
-	<center>
-    	<div  class="login">
+    <center>
+        <div  class="login">
             <h3>Camp</h3>
-						
+                        
          <!--Starting of Form----------->
-                <form method="post">
+                <form action="index.php?do=logined" method="POST">
+                    <select name="select">
+                                     <option value="Admin">Admin</option>
+                                     <option value="Member">Member</option>
+                                </select>
+                                <br>
         
                      <input class="TF" type="text" id="email" placeholder="E-Mail" name="email" required>
                     
@@ -35,11 +42,11 @@
                         </center>
 
                 </form>
-         <!--End of Form----------->	
+         <!--End of Form----------->    
                 
         </div>
     
-    </center>					
+    </center>                   
            
            
        

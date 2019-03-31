@@ -9,25 +9,25 @@
 <body>
 	<div class="header">
 		<div>
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li>
-					<a href="index.html"><span>H</span>ome</a>
+					<a href="index.php"><span>H</span>ome</a>
 				</li>
 				<li>
-					<a href="about.html"><span>A</span>bout</a>
+					<a href="about.php"><span>A</span>bout</a>
 				</li>
 				<li>
-					<a href="programs.html"><span>P</span>rograms</a>
+					<a href="programs.php"><span>P</span>rograms</a>
 				</li>
 				<li class="selected">
-					<a href="blog.html"><span>B</span>log</a>
+					<a href="blog.php"><span>B</span>log</a>
 				</li>
 				<li>
-					<a href="staff.html"><span>S</span>taff</a>
+					<a href="staff.php"><span>S</span>taff</a>
 				</li>
 				<li>
-					<a href="contact.html"><span>C</span>ontact</a>
+					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
 			</ul>
 			<div>
