@@ -8,6 +8,7 @@
 </head>
     <br><br><br>
 <body class="registerBody">
+<a class="home" href="index.php">Home</a>
    <center> <div class="container">
     
        <table class="container">

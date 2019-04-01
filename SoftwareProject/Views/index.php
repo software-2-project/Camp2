@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
+
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Summer Camp Website Template</title>
+	<title>Summer Camp</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <script>
+            var i = 0; 			// Start Point
+        var images = [];	// Images Array
+        var time = 3000;	// Time Between Switch
+
+        // Image List
+        images[0] = "images/s5.jpg";
+        images[1] = "images/s2.jpg";
+        images[2] = "images/s3.jpg";
+        images[3] = "images/s4.jpg";
+      
+        
+
+        // Change Image
+        function changeImg(){
+            document.slide.src = images[i];
+
+            // Check If Index Is Under Max
+            if(i < images.length - 1){
+              // Add 1 to Index
+              i++; 
+            } else { 
+                // Reset Back To O
+                i = 0;
+            }
+
+            // Run function every x seconds
+            setTimeout("changeImg()", time);
+        }
+
+        // Run function when page loads
+        window.onload=changeImg;
+
+        
+    </script>
 </head>
 <body>
 	<div class="header">
 		<div>
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li class="selected">
 					<a href="index.php"><span>H</span>ome</a>
@@ -29,165 +65,87 @@
 				<li>
 					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
+                <li>
+					<a href="login.php"><span>L</span>ogin</a>
+				</li>
 			</ul>
-			<div>
-				<p>
-					<span>C</span>amp <span>S</span>tarts <span>I</span>n: <span><span>228</span></span> <span>D</span>ays
-				</p>
-			</div>
+			
 		</div>
 	</div>
+   <div class="slideContainer"> 
+      <center><h1 class="title">Let's Start <span class="sabout1">The Journey</span></h1></center>
+       <img class="slides" name="slide" width="75%" height="60%" />
+        <img class="screen" src="images/screen.png">
+       </div>
+
+    <!-----First Div--------->
 	<div class="body">
-	   <?php
+        <?php
 		include '../Controller/cont.php';
 		?>
-
 		<div>
 			<div class="featured">
 				<img src="images/camping.jpg" alt="">
 				<div>
 					<div>
-						<h3><span>B</span>E <span>A</span> <span>C</span>AMPER <span>T</span>ODAY!</h3>
+						<h3>BE A CAMPER TODAY!</h3>
 						<p>
-							You can remove any link to our website from this website template, you're free to use this website template without linking back to us
+							You can be a camper Today !
+                            Just join us and let's start the story.
 						</p>
 						<a href="register.php">REGISTER NOW!</a>
 					</div>
 				</div>
 			</div>
-			<div>
-				<div>
-					<div>
-						<div class="section">
-							<h2>WHY CHOOSE US?</h2>
-							<p>
-								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text.
-							</p>
-							<ul>
-								<li>
-									<p>
-										Vivamus at justo ut urna porta pulvinar
-									</p>
-								</li>
-								<li>
-									<p>
-										Pellentesque nunasidp adipiscing sollicitudin dolor id sagittis.
-									</p>
-								</li>
-								<li>
-									<p>
-										Donec sit amet felis a nibh ornare malesuada.
-									</p>
-								</li>
-								<li>
-									<p>
-										Etiam et tellus mi, et semper lectus.
-									</p>
-								</li>
-							</ul>
-							<ul class="last">
-								<li>
-									<p>
-										Quisque in purus nec purus feugiat consectetur.
-									</p>
-								</li>
-								<li>
-									<p>
-										Fusce et ipsum dolor lorem ante, at sollicitudin libero.
-									</p>
-								</li>
-								<li>
-									<p>
-										Etiam et tellus mi, et semper lectus.
-									</p>
-								</li>
-								<li>
-									<p>
-										Vivamus at justo ut urna porta pulvinar.
-									</p>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h3>UPCOMING EVENTS</h3>
-							<ul>
-								<li>
-									<div>
-										<span>11/10/2011</span>
-										<p>
-											This is just a place holder, so you can see what the site would look like.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div>
-										<span>11/19/2011</span>
-										<p>
-											Praesent quis nisl in velit imper diet suscipit a id quam.
-										</p>
-									</div>
-								</li>
-								<li class="last">
-									<div>
-										<span>11/19/2011</span>
-										<p>
-											Nullam vulputate elementum consequat. Fusce leo felis, bibendum.
-										</p>
-									</div>
-								</li>
-							</ul>
-							<a href="events.html">View All</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+           
+            </div></div>
+     <div class="about">
+         <br>
+			<p class="pabout1">Don't Let Any thing prevent you to be <span class="sabout1">CAMPER</span></p>
+			<p class="pabout2"> You have the right to discover anything. </p>
+		</div> 
+    <!-----------Second Div-------->        
+
+    <!------------------Footer--------------------------->
 	<div class="footer">
 		<div>
-			<div>
-				<h3>NEWSLETTER</h3>
-				<p>
-					Nulla porttitor vulputate elit, trist ique malesuada sem.
-				</p>
-				<form action="index.php">
-					<input type="text" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
-					<input type="submit" value="Get">
-				</form>
-			</div>
-			<div>
+
+            
+            
+            
+            
+			<div class="latestBlog">
 				<h4>LATEST BLOG</h4>
 				<ul>
 					<li>
 						<p>
-							<a href="blog.php">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
+							<a href="blog.php">10 Benifits to Camp in winter.</a>
 						</p>
-						<span>11/07/2011</span>
+						
 					</li>
+					
 					<li>
 						<p>
-							<a href="blog.php">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
+							<a href="blog.php">How to be a good camper ?</a>
 						</p>
-						<span>11/03/2011</span>
-					</li>
-					<li>
-						<p>
-							<a href="blog.php">Cum sociis natoque penatibus et magnis dis parturient.</a>
-						</p>
-						<span>11/27/2011</span>
+						
 					</li>
 				</ul>
 			</div>
 			<div class="connect">
 				<h4>FOLLOW US:</h4>
-				<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">Facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">Twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" class="google">Google+</a>
+				<a href="http://facebook.com" class="facebook">Facebook</a>
+                <a href="http://twitter.com" class="twitter">Twitter</a>
+                <a href="http://googleplus.com" class="google">Google+</a>
 			</div>
 		</div>
 		<div>
 			<p>
-				Summer Camp &#169; 2011 | All Rights Reserved
+				Summer Camp &#169; 2019 | All Rights Reserved
 			</p>
 		</div>
 	</div>
+    
+    <script type="text/javascript"  src="js/main.js"></script>
 </body>
 </html>

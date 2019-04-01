@@ -9,6 +9,7 @@
     <br><br><br>
 <body class="registerBody">
   
+  
     
 
     
@@ -18,6 +19,8 @@
 
             
  <!-----------Right Side-------------->
+ <a class="home" href="index.php">Home</a>
+
     <center>
         <div  class="login">
             <h3>Camp</h3>
