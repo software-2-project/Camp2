@@ -1,5 +1,5 @@
 <?php
-		include '../controller/cont.php';
+		include '../Controller/cont.php';
 		?>
 <!DOCTYPE html>
 <!-- Website template by freewebsitetemplates.com -->
@@ -18,27 +18,28 @@
 					<a href="index_members.php"><span>H</span>ome</a>
 				</li>
 				<li>
-					<a href="talent.php"><span>T</span>alent</a>
+					<a href="#"><span>T</span>alent</a>
 				</li>
 				<li>
 					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
+				<!-- <li>
+					<a href="#"><span>T</span>metable</a>
+				</li> -->
 				<li>
-					<a href="timetable_members.php"><span>T</span>metable</a>
-				</li>
-				<li>
-					<a href="reservations.php"><span>R</span>eservation</a>
+					<a href="#"><span>R</span>eservation</a>
 				</li>
 				<li>
 					<a href="offers.php?do=offers"><span>O</span>ffers</a>
 				</li>
 				<li>
-                                    <a href="search_member.php"><span>S</span>earch</a>
-                                </li>
+                <a href="#"><span>S</span>earch</a>
+                    </li>
 				<?php
 		            session_start();
 		            if (isset($_SESSION['email']))
-		                echo " <li><a href='../models/logout.php'>Logout</a></li> ";
+						echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
+						echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
 		       
 				?>
 				

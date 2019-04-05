@@ -24,7 +24,7 @@
 					<a href="contact_admin.php"><span>C</span>ontact</a>
 				</li>
 				<li>
-					<a href="../models/reports.php"><span>R</span>eports</a>
+					<a href="../Models/reports.php"><span>R</span>eports</a>
 				</li>
 				<li>
                                     <a href="search_admin.php"><span>S</span>earch </a>
@@ -33,15 +33,16 @@
 				<?php
                                 session_start();
                                 if (isset($_SESSION['email']))
-                                    echo " <li><a href='../models/logout.php'>Logout</a></li> ";
-                                echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
+                                    echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
+								echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
+								
 				?>
 			</ul>
 		</div>
 	</div>
 	<div class="body">
 		<?php
-		include '../controller/cont.php';
+		include '../Controller/cont.php';
 		?>
 		<div>
 			<div class="featured">

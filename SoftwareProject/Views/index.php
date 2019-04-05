@@ -74,7 +74,7 @@
 	</div>
    <div class="slideContainer"> 
       <center><h1 class="title">Let's Start <span class="sabout1">The Journey</span></h1></center>
-       <img class="slides" name="slide" width="75%" height="60%" />
+     <br>  <img class="slides" name="slide" width="75%" height="60%" />
         <img class="screen" src="images/screen.png">
        </div>
 

@@ -14,7 +14,7 @@
 
     
           <?php
-            include '../controller/cont.php';
+            include '../Controller/cont.php';
         ?>
 
             

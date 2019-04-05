@@ -1,7 +1,8 @@
 <?php
 include_once "../Models/user_data.php";
 include "../Models/Register.php";
-include_once "../models/app_user.php";
+include_once "../Models/app_user.php";
+include '../Models/validation.php';
 
 if($_GET){
 
@@ -38,7 +39,9 @@ if($_GET){
                                 header("location:index_admin.php");
                             }
                             else {
-                                header("location:index.php");   
+                                // header("location:login.php");   
+                                $ob = new validation();
+                                $ob->Login_error();
                             }
                         }
                     }
@@ -60,8 +63,9 @@ if($_GET){
 
                                 header("location:index_members.php");
                             }
-                            else {
-                                header("location:index.php");   
+                            else {   
+                               $val = new validation();
+                               $val->Login_error();                                
                             }
                         }
                     }
