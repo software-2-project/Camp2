@@ -9,7 +9,7 @@
 <body>
 	<div class="header">
 		<div>
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li>
 					<a href="index.php"><span>H</span>ome</a>
@@ -38,6 +38,9 @@
 		</div>
 	</div>
 	<div class="body">
+	    <?php
+		include '../Controller/cont.php';
+        ?>
 		<div class="contact">
 			<div>
 				<div>
@@ -58,23 +61,23 @@
 							</p>
 						</div>
 						<h3><span>F</span>or <span>A</span>ny <span>I</span>nquiries, <span>P</span>lease <span>F</span>ill <span>o</span>ut <span>T</span>he <span>F</span>orm <span>B</span>elow.</h3>
-						<form action="index.html">
+						<form action="contact.php?do=sendmail" method="post">
 							<table>
 								<tr>
 									<td><label for="name"><span>N</span>ame:</label></td>
-									<td><input type="text" id="name"></td>
+									<td><input type="text" id="name" name="name"></td>
 								</tr>
 								<tr>
 									<td><label for="email"><span>E</span>mail <span>A</span>ddress:</label></td>
-									<td><input type="text" id="email"></td>
+									<td><input type="text" id="email" name="email"></td>
 								</tr>
 								<tr>
 									<td><label for="subject"><span>S</span>ubject:</label></td>
-									<td><input type="text" id="subject"></td>
+									<td><input type="text" id="subject" name="subject"></td>
 								</tr>
 								<tr>
 									<td><label for="message"><span>M</span>essage:</label></td>
-									<td><textarea name="message" id="message" cols="30" rows="10"></textarea></td>
+									<td><textarea name="message" id="message" cols="30" rows="10" ></textarea></td>
 								</tr>
 							</table>
 							<input type="submit" value="Send" id="submit">

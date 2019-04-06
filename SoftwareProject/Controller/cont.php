@@ -3,6 +3,7 @@ include_once "../Models/user_data.php";
 include "../Models/Register.php";
 include_once "../Models/app_user.php";
 include '../Models/validation.php';
+include '../Models/Contact.php';
 
 if($_GET){
 
@@ -20,56 +21,71 @@ if($_GET){
 
     }
         if($_GET['do']=='logined')
-                {
-                    if (isset($_POST['select'])) {
-                        if($_POST['select']=='Admin'){
-                            $email = $_POST['email'];
-                            $password = $_POST['password'];
+        {
+         if (isset($_POST['select'])) {
+            if($_POST['select']=='Admin'){
+                $email = $_POST['email'];
+                $password = $_POST['password'];
 
-                            $UserInfo = new app_user();
-                            $check = $UserInfo->login_admin($email, $password);
-
-
-                            if ($check) {
-                                session_start();
-                                $_SESSION['email'] = $email;
-                                $_SESSION['password'] = $password;
+                $UserInfo = new app_user();
+                $check = $UserInfo->login_admin($email, $password);
 
 
-                                header("location:index_admin.php");
-                            }
-                            else {
-                                // header("location:login.php");   
-                                $ob = new validation();
-                                $ob->Login_error();
-                            }
-                        }
-                    }
+                if ($check) {
+                    session_start();
+                    $_SESSION['email'] = $email;
+                    $_SESSION['password'] = $password;
+
+
+                    header("location:index_admin.php");
+                }
+                else {
+                    // header("location:login.php");   
+                    $ob = new validation();
+                    $ob->Login_error();
+                }
+            }
+         }
 
                    
 
-                    if (isset($_POST['select'])) {
-                        if($_POST['select']=='Member'){
-                            $email = $_POST['email'];
-                            $password = $_POST['password'];
+            if (isset($_POST['select'])) {
+                if($_POST['select']=='Member'){
+                    $email = $_POST['email'];
+                    $password = $_POST['password'];
 
-                            $UserInfo = new app_user();
-                            $check = $UserInfo->login_member($email, $password);
+                    $UserInfo = new app_user();
+                    $check = $UserInfo->login_member($email, $password);
 
-                            if ($check) {
-                                session_start();
-                                $_SESSION['email'] = $email;
-                                $_SESSION['password'] = $password;
+                    if ($check) {
+                        session_start();
+                        $_SESSION['email'] = $email;
+                        $_SESSION['password'] = $password;
 
-                                header("location:index_members.php");
-                            }
-                            else {   
-                               $val = new validation();
-                               $val->Login_error();                                
-                            }
-                        }
+                        header("location:index_members.php");
                     }
-
+                    else {   
+                        $val = new validation();
+                        $val->Login_error();                                
+                    }
                 }
+            }
+
+        }
+
+
+        if($_GET['do'] == 'sendmail'){
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $subj =  $_POST['subject'];
+            $body =  $_POST['message'];
+            $obj = new contactMail();
+
+            $obj->send_mail($name, $email, $subj, $body);
+ 
+        }
     
-}?>
+}
+
+
+?>
