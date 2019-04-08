@@ -84,8 +84,8 @@ p a:hover {
 	font-weight:700;
 	line-height:50px;
 	text-decoration:none;
-	
 	text-transform:uppercase;
+	
 }
 .header div ul li a:hover {
 	color:#fff;
@@ -496,14 +496,14 @@ p a:hover {
 	width:589px!important;
 }
 .body div div div div.about div:first-child h2, .body div div div div.programs h2, .body div div div div.competition h2, .body div div div div.activities h2, .body div div div div.application h2, .body div div div div.staff h2, .body div div div div.register h2, .body div div div div.blog h2, .body div div div div.events h2, .body div div div div div.section h2, .body div.contact div div div.contact h2 {
-	color:#756752;
+	color:#ff8000;
 	text-transform:uppercase;
 	font-size:36px;
 	letter-spacing:0.028em;
 	font-weight:bold;
 	text-shadow:0 1px 0 #fff8c7;
 	text-align:center;
-	border-color: #717A5D;
+	border-color: #ff8000;
 	border-style: none none solid;
 	border-width: 1px;
 	padding:19px 0 18px;
@@ -517,7 +517,7 @@ p a:hover {
 	font-family: 'forumregular';
 	font-size:16px;
 	line-height:24px;
-	border-color: #717A5D;
+	border-color: #ff8000;
 }
 .body div div div div.about div:first-child p {
 	border:0 none;
@@ -1055,9 +1055,10 @@ p a:hover {
 	border-color: #717A5D;
 }
 .body div div div div.blog div p, .body div div div div.events div p {
-	color:#707070;
+	color:#fff;
 	text-align: justify;
 }
+
 .body div div div div.blog div.first h3 {
 	margin-bottom:21px!important;
 }
@@ -1298,6 +1299,22 @@ p a:hover {
 	padding:0 0 10px!important;
 	width:251px;
 	border-color: #717A5D;
+}
+#talent
+{
+background-color:rgba(255, 255, 255, 0.8);
+
+
+}
+
+
+#txtArea{
+	font-size: 18px;
+}
+#txt
+{
+	font-size: 20px;
+	color: #000;
 }
 /*------------------------- Footer ------------------------*/
 .footer {
@@ -1574,11 +1591,29 @@ p a:hover {
         
 }
 
-
-.TF
+/* Text fields */
+.TF 
 {
    background-color: rgba(255,255,255);
     height: 15px;
+    width: 250px;
+    padding-left: 3px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    
+    
+    border: 5px;
+    border-color:  #ff8000;
+    margin-left: 20px;
+   
+    
+}
+/* Text Areas */
+.TA
+{
+   background-color: rgba(255,255,255);
+    height: 150px;
     width: 250px;
     padding-left: 3px;
     padding: 10px;
