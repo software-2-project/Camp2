@@ -35,7 +35,7 @@ p a:hover {
 	margin:0 auto;
 	padding:0 30px;
 	position:relative;
-	width:1200px;
+	width:100%;
     margin-left: 90px;
     
 }
@@ -67,7 +67,7 @@ p a:hover {
 .header div ul li {
 	float:left;
 	height:51px;
-	margin:0 0 0 15px;
+	margin:0 0 0 0px;
 	padding:0 10px;
 	text-align:center;
     
@@ -85,6 +85,10 @@ p a:hover {
 	line-height:50px;
 	text-decoration:none;
 	text-transform:uppercase;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
 	
 }
 .header div ul li a:hover {
@@ -944,11 +948,11 @@ p a:hover {
 }
 .body div div div div.staff div.first h3:first-letter, .body div div div div.staff div.first h3 span {
 	font-size:26px;
-	color:#756752;
+	color:#ff8000;
 }
 .body div div div div.staff div.first h3 {
 	border:0;
-	color:#776855;
+	color:#ff8000;
 	display:inline-block;
 	font-size:20px;
 	font-weight:700;
@@ -1329,6 +1333,19 @@ background-color:rgba(255, 255, 255, 0.8);
     
 }
 
+
+/*---------------Reservation--------------------------*/
+
+.first .sendd
+{
+    font-size: 30px;
+    color: #fff;
+    background-color:#ff8000; 
+    padding: 20px;
+/*    text-decoration: underline;*/
+    border: solid 1px #ff8000 3px;
+    border-radius: 5px;
+}
 
 /*------------------------- Footer ------------------------*/
 .footer {

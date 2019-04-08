@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Summer Camp</title>
+	<title>Talent-Summer Camp</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
  
@@ -32,7 +32,7 @@
 					<a href="offers.php?do=offers"><span>O</span>ffers</a>
 				</li>
 				<li>
-                                    <a href="search_member.php"><span>S</span>earch</a>
+                                    <a href="search.php"><span>S</span>earch</a>
                                 </li>
 				
 
