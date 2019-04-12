@@ -13,19 +13,18 @@ require 'Contact-mail/PHPMailer-master/src/POP3.php';
          $mail->Host = 'smtp.gmail.com';
          $mail->Port = 465;
          $mail->IsHTML(true);
-         $mail->Username = 'lacasa.fcih@gmail.com';
-         $mail->Password = 'lacasafcih';
+         $mail->Username = 'yasser.tarek@uflare.io';
+         $mail->Password = 'yassertarek98';
          $mail->SetFrom($usr_mail);
          $mail->Subject  = $subject;
          $mail->Body = $body;
          $mail->addAddress($usr_mail,$name);
         //  $mail->Send();
          if(!$mail->Send())
-             echo 'Mail wasnot Sent '.$mail->ErrorInfo;
+         echo "<script type='text/javascript'>alert('submitted failed!')</script>".$mail->ErrorInfo;
            
-           else
-               echo 'Mail Sent';
-             
+         else
+         echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
         }
        
 
