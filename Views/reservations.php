@@ -48,19 +48,17 @@
     
     
 	<div class="body">
-	
 		<div>
 			<div id="talent">
 				<div class="reservation_area">
 					<div class="blog">
 						<h2>Reservaions</h2>
 						<div class="first">
-							<h3>Please click in your option</h3>
+							<h3>Please choose  your option</h3>
 							
                             <a class="sendd" href="reservations.php?do=competition">Compititions</a>
-						  	 <a class="sendd" href="reservations.php?do=hall">Sea</a>
 						  	 <a class="sendd" href="reservations.php?do=trip">Trips</a>
-						  	 <a class="sendd" href="reservations.php?do=party">Forest</a>
+
 
 								
 						</div>
@@ -68,6 +66,9 @@
 					</div>
 				</div>
 			</div>
+	<?php
+	include '../Controller/cont.php';
+	 ?>
 		</div>
 		
 		

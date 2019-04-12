@@ -6,9 +6,10 @@ include "../Models/Register.php";
 include_once "../Models/app_user.php";
 include '../Models/validation.php';
 include '../Models/Contact.php';
+include '../Models/reservation.php';
 
 if($_GET){
-
+/* Register */
     if($_GET['do']=='login')
     {
         $fn = $_POST['fname'];
@@ -22,6 +23,8 @@ if($_GET){
        $obj->signup($fn, $ln, $email, $pass, $birth, $phone);
 
     }
+
+    /* login */
     if($_GET['do']=='logined')
     {
          if (isset($_POST['select'])) {
@@ -74,6 +77,7 @@ if($_GET){
             }
 
         }
+        /* Talent */
 
         if($_GET['do']=='add_talent'&&$_GET['iduser'])
         {
@@ -85,6 +89,7 @@ if($_GET){
                     $op->add_talent($title , $discription , $user_id);
 
         }
+        /* contact_mail */
 
         if($_GET['do'] == 'sendmail'){
             $name = $_POST['name'];
@@ -96,6 +101,54 @@ if($_GET){
             $obj->send_mail($name, $email, $subj, $body);
  
         }
+
+       /* competition */
+
+        if($_GET['do'] == 'competition'){
+            $obj = new competition();
+            $val = $obj->get_comptetion();
+            foreach ($val as $value)
+			{
+                echo "<div style='text-align: center;padding: 20px;'>";
+                echo "<h1 style = 'color: #ff8000'>" . $value['com_name'] . "</h1>" ;
+                echo "<div>" . $value['com_description'] . "</div>";
+                echo "<button><a href='../Views/reservations.php?do=confirm_reservecompetition&iduser=1&idcom=" . $value['com_id'] ."'>Reserve</a></button>" ;
+                echo "</div>";
+		   	}
+        }
+        if($_GET['do'] == 'confirm_reservecompetition'){
+            if ($_GET['iduser'] && $_GET['idcom']){
+                $ob = new competition();
+                $ob->reserve_competition($_GET['iduser'] , $_GET['idcom']);
+                echo "<script type='text/javascript'>alert('Reserved successfuly')</script>";
+            }
+        }
+
+        /* trips */
+
+        if($_GET['do'] == 'trip'){
+            $obj = new trips();
+            $val = $obj->get_tripsavailable();
+            foreach ($val as $value) 
+			   {
+                echo "<div style='text-align: center;padding: 20px;'>";
+                echo "<h1 style = 'color: #ff8000'>" . $value['trip_name'] . "</h1>" ;
+                echo "<div>" . $value['trip_description'] . "</div>";
+                echo "<button><a href='../Views/reservations.php?do=confirm_trips&iduser=1&idtrip=" . $value['trip_id'] . "'>Reserve</a></button>" ;
+                echo "</div>";	
+			}
+        } 
+
+        if($_GET['do'] == 'confirm_trips'){
+            if ($_GET['iduser']&&$_GET['idtrip']){
+                $obj= new trips();
+                $obj-> reserve_trips($_GET['iduser'], $_GET['idtrip']);
+                echo "<script type='text/javascript'>alert('Reserved sucessfuly')</script>";
+
+            }
+        }
+
+
     
 }
 
