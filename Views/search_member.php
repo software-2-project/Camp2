@@ -61,23 +61,23 @@ if (isset($_POST['search'])) {
 			<a href="index_members.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
 				<li >
-					<a href="index.php"><span>H</span>ome</a>
-				</li>
-				<li >
-					<a href="talent.php"><span>T</span>alent</a>
-				</li>
-				<li>
-					<a href="contact.php"><span>C</span>ontact</a>
-				</li>
+          <a href="index_members.php"><span>H</span>ome</a>
+        </li>
+        <li>
+          <a href="talent.php"><span>T</span>alent</a>
+        </li>
+        <li>
+          <a href="contact.php"><span>C</span>ontact</a>
+        </li>
 
-				<li>
-					<a href="reservations.php"><span>R</span>eservation</a>
-				</li>
-				<li>
-					<a href="offers.php?do=offers"><span>O</span>ffers</a>
-				</li>
-				<li class="selected">
-                    <a href="search_member.php"><span>S</span>earch</a>
+        <li >
+          <a href="reservations.php"><span>R</span>eservation</a>
+        </li>
+        <li>
+          <a href="offers.php?do=offers"><span>O</span>ffers</a>
+        </li>
+        <li class="selected">
+                                    <a href="search_member.php"><span>S</span>earch</a>
                 </li>
 				 <?php
                     session_start();
@@ -98,7 +98,7 @@ if (isset($_POST['search'])) {
             <div id="talent">
                 <div>
 
-                    <form style="text-align: center;margin-top: 50px;" action="search.php" method="post">
+                    <form style="text-align: center;margin-top: 50px;" action="search_member.php" method="post">
                         <input class="search" id="search" type="text" name="search" placeholder="Search by Country, Day, Time"><br>
                         <input class="submitRegister" type="submit" value="Find">
                     </form>
