@@ -79,12 +79,7 @@ if (isset($_POST['search'])) {
 				<li class="selected">
                     <a href="search_member.php"><span>S</span>earch</a>
                 </li>
-				 <?php
-                    session_start();
-                    if (isset($_SESSION['email']))
-                        echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
 
-                ?>
 
 			</ul>
 		</div>
