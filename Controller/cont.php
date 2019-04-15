@@ -7,6 +7,7 @@ include_once "../Models/app_user.php";
 include '../Models/validation.php';
 include '../Models/Contact.php';
 include '../Models/reservation.php';
+include '../Models/contact_with_admin.php';
 
 if($_GET){
 /* Register */
@@ -146,6 +147,15 @@ if($_GET){
                 echo "<script type='text/javascript'>alert('Reserved sucessfuly')</script>";
 
             }
+        }
+
+        if($_GET['do'] == 'sendopnion'){
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
+            $obj = new contact_with_admin();
+            $obj->sendOpnion($name, $email, $subject, $message);
         }
 
 

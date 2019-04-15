@@ -96,13 +96,7 @@
                                     echo "<td>" . $row['time'] . "</td>";
                                     echo "</tr>";
                                 }
-                            
-                            // else {
-                            //     echo "a7a";
-                            // }
-                             }
-                        //   while ($row = mysqli_fetch_array($result)) {
-                        //   }
+                            }
                           ?>
                     </table>
 
