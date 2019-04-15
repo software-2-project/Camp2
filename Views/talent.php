@@ -52,7 +52,7 @@
 	<div class="body" >
 		
 		<?php
-			include '../controller/cont.php';
+			include '../Controller/cont.php';
 		?>
 		<div >
 			<div id="talent">
@@ -71,7 +71,7 @@
 							 <br><br>
 						<p id="txt">	 Descrition</p>
 							 
-							 <textarea name="descrition"  class="TA"  required> </textarea>
+							 <textarea name="description"  class="TA"  required> </textarea>
 							 
 							 </textarea>
 
