@@ -80,7 +80,7 @@
 							</p>
 						</div>
 						<h3><span>F</span>or <span>A</span>ny <span>I</span>nquiries, <span>P</span>lease <span>F</span>ill <span>o</span>ut <span>T</span>he <span>F</span>orm <span>B</span>elow.</h3>
-						<form action="contact.php?do=sendmail" method="post">
+						<form action="contact.php?do=sendopnion" method="post">
 							<table>
 								<tr>
 									<td><label for="name"><span>N</span>ame:</label></td>
