@@ -32,9 +32,7 @@
     <li class="nav-item">
       <a class="nav-link" href="index_admin.php"><i class="fa fa-home" ></i>Home</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fa fa-window-restore" ></i>Reports</a>
-    </li>
+   
       <li class="nav-item">
       <a class="nav-link" href="search_admin.php"><i class="fa fa-search" ></i>Search</a>
     </li>
@@ -46,7 +44,7 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="addnewadmin.php">New Admin</a>
-        <a class="dropdown-item" href="addcompitition">New Competition</a>
+        <a class="dropdown-item" href="addcompitition.php">New Competition</a>
         <a class="dropdown-item" href="addtrip.php">New Ttip</a>
         
       </div>

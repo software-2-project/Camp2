@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
+
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Competition - Summer Camp Website Template</title>
+	<title>Competition - Summer Camp</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>

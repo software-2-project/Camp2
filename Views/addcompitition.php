@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html>
@@ -20,6 +21,8 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css"> 
 	
 </head>
+    
+    
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
@@ -58,6 +61,33 @@
 </nav><br><br>
     
 
+    <div class="newform ">
+       
+  <form>
+       <div class="form-group">
+       <label for="compname">Competition Name:</label>
+    <input type="text" class="form-control" id="compname" placeholder="Enter Competition Name" name="compname"required>
+           
+  </div>
+    <div class="form-group">
+    <label for="compid">Competition ID:</label>
+   
+    <input type="text" class="form-control" id="compid" placeholder="Enter Competition ID" name="compid" required>
+    
+  </div>
+  
+ 
+  <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea type="text" class="form-control" id="tripdescription" placeholder="Description" name="comdescription" required></textarea>
+   
+  </div>
+      <input class="btn btn-danger btn-block" type="submit" id="sendMail" value="Submit">
+  </div>
+    
+  
+</form>
+	</div>
 
 </body>
 
