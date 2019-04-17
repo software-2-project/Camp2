@@ -60,49 +60,6 @@
 </nav><br><br>
     
 
-    <div class="newform ">
-   <center> <h3 class="text-danger">Add New Admin</h3></center>
-    <form action="" class=" was-validated">
-  <div class="form-group">
-    <label for="fname">First Name:</label>
-    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="ad_fname"required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-    <div class="form-group">
-    <label for="lname">Last Name:</label>
-    <input type="text" class="form-control" id="lname" placeholder="Enter Last name" name="ad_lname" required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-        <div class="form-group">
-    <label for="tel-number">Phone:</label>
-    <input type="numbers" class="form-control" id="tel-number" placeholder="Enter Phone" name="ad_phone" required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-        <div class="form-group">
-    <label for="salary">Salary:</label>
-    <input type="number" class="form-control" id="salary" placeholder="Enter username" name="ad_salary" required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-        <div class="form-group">
-    <label for="email">Username:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter username" name="ad_email" required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input type="password" class="form-control" id="password" placeholder="Enter password" name="ad_password" required>
-    <div class="valid-feedback">Valid.</div>
-    <div class="invalid-feedback">Please fill out this field.</div>
-  </div>
-  <input class="btn btn-danger btn-block" type="submit" id="submit" value="Register">
-  
-</form>
-	</div>
 
 </body>
 
