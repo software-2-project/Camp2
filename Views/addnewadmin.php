@@ -88,8 +88,8 @@
     <div class="invalid-feedback">Please fill out this field.</div>
   </div>
         <div class="form-group">
-    <label for="email">Username:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter username" name="ad_email" required>
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="ad_email" required>
     <div class="valid-feedback">Valid.</div>
     <div class="invalid-feedback">Please fill out this field.</div>
   </div>
