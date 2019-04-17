@@ -1651,7 +1651,7 @@ background-color:rgba(255, 255, 255, 0.8);
     border-radius: 7px;
     margin-bottom: 5px;
     
-    
+
     border: 5px;
     border-color:  #ff8000;
     margin-left: 20px;
@@ -1702,4 +1702,21 @@ font-size: 20px;
     color: #ff8000;
     cursor: pointer;  
 }
+
+.newform
+{
+    background-color: #fff;
+    width: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px;
+    border-radius: 7px;
+    
+}
+
+
+
 
