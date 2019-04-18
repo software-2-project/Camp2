@@ -16,9 +16,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-	<link rel="stylesheet" href="css/style.css" type="text/css"> 
-	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -30,7 +30,7 @@
     <li class="nav-item">
       <a class="nav-link" href="index_admin.php"><i class="fa fa-home" ></i>Home</a>
     </li>
-   
+
       <li class="nav-item">
       <a class="nav-link" href="search_admin.php"><i class="fa fa-search" ></i>Search</a>
     </li>
@@ -44,7 +44,7 @@
         <a class="dropdown-item" href="addnewadmin.php">New Admin</a>
         <a class="dropdown-item" href="addcompitition.php">New Competition</a>
         <a class="dropdown-item" href="addtrip.php">New Ttip</a>
-        
+
       </div>
     </li>
         <li class="nav-item">
@@ -53,10 +53,15 @@
        <li class="nav-item">
       <a class="nav-link" href="contactadmin.php"><i class="fa fa-comments" ></i>Contact</a>
     </li>
-    
+		<?php
+														session_start();
+														if (isset($_SESSION['email']))
+																echo " <li><a href='../models/logout.php'>Logout</a></li> ";
+														echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
+		?>
   </ul>
 </nav><br><br>
-    
+
 
     <div class="newform ">
    <center> <h3 class="text-danger">Add New Admin</h3></center>
@@ -98,7 +103,7 @@
     <div class="invalid-feedback">Please fill out this field.</div>
   </div>
   <input class="btn btn-danger btn-block" type="submit" id="submit" value="Register">
-  
+
 </form>
 	</div>
 
