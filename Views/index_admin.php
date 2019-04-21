@@ -34,6 +34,10 @@
       <a class="nav-link" href="search_admin.php"><i class="fa fa-search" ></i>Search</a>
     </li>
 
+		<li class="nav-item">
+      <a class="nav-link" href="../models/reports.php"><i class="fa fa-report" ></i>reports</a>
+    </li>
+
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

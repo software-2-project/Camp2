@@ -9,7 +9,40 @@ class App_user extends UserData{
     private $subject;
     private $message;
 
+    public function reportofadmin()
+    {
+      $row=array();
+     $query = "SELECT `ad_fname` FROM `admin` WHERE 1";
+          if ($run = mysqli_query($GLOBALS['conn'], $query))
+          {
+          while($row[]=mysqli_fetch_assoc($run)){
+          }}
 
+          return $row;
+    }
+
+    public function reportofcoach()
+    {
+      $row2=array();
+     $query = "SELECT `co_fname` FROM `coach` WHERE 1";
+          if ($run = mysqli_query($GLOBALS['conn'], $query))
+          {
+          while($row2[]=mysqli_fetch_assoc($run)){
+          }}
+
+          return $row2;
+    }
+    public function reportofmember()
+    {
+      $row3=array();
+     $query = "SELECT `fname` FROM `user` WHERE 1";
+          if ($run = mysqli_query($GLOBALS['conn'], $query))
+          {
+          while($row3[]=mysqli_fetch_assoc($run)){
+          }}
+
+          return $row3;
+    }
 		public function login_admin($email, $password) {
 
         $this->email = $email;
