@@ -59,21 +59,23 @@
   </ul>
 </nav><br><br>
     
-
+<?php
+include '../Controller/cont.php';
+?>
     <div class="newform ">
        
-  <form>
+  <form action="addtrip.php?do=addtrips" method="post">
        <div class="form-group">
        <label for="tripname">Trip Name:</label>
     <input type="text" class="form-control" id="tripname" placeholder="Enter Trip Name" name="tripname"required>
            
   </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
     <label for="tripid">Trip ID:</label>
    
     <input type="text" class="form-control" id="tripid" placeholder="Enter Trip ID" name="tripid" required>
     
-  </div>
+  </div> -->
   
  
   <div class="form-group">

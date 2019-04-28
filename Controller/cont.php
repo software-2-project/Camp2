@@ -8,6 +8,9 @@ include '../Models/validation.php';
 include '../Models/Contact.php';
 include '../Models/reservation.php';
 include '../Models/contact_with_admin.php';
+include '../Models/trip.php';
+include '../Models/admin.php';
+include '../Models/compitition.php';
 
 if($_GET){
 /* Register */
@@ -93,17 +96,16 @@ if($_GET){
         /* contact_mail */
 
         if($_GET['do'] == 'sendmail'){
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $subj =  $_POST['subject'];
-            $body =  $_POST['message'];
+            $email = $_POST['ad_email'];
+            $subj =  $_POST['ad_subject'];
+            $body =  $_POST['ad_message'];
             $obj = new contactMail();
 
-            $obj->send_mail($name, $email, $subj, $body);
+            $obj->send_mail($email, $subj, $body);
  
         }
 
-       /* competition */
+       /* Get competition */
 
         if($_GET['do'] == 'competition'){
             $obj = new competition();
@@ -125,7 +127,7 @@ if($_GET){
             }
         }
 
-        /* trips */
+        /* Get trips */
 
         if($_GET['do'] == 'trip'){
             $obj = new trips();
@@ -156,6 +158,36 @@ if($_GET){
             $message = $_POST['message'];
             $obj = new contact_with_admin();
             $obj->sendOpnion($name, $email, $subject, $message);
+        }
+
+        /* add Trips */
+
+        if($_GET['do'] == 'addtrips'){
+            $name = $_POST['tripname'];
+            $desc = $_POST['tripdescription'];
+            $obj = new Trip();
+            $obj->addTrip($name,$desc);
+            
+        }
+        /* add new admin */
+        if($_GET['do'] == 'addadmin'){
+        $fname = $_POST['ad_fname'];
+        $lname = $_POST['ad_lname'];
+        $phone = $_POST['ad_phone'];
+        $salary = $_POST['ad_salary'];
+        $email = $_POST['ad_email'];
+        $pass = $_POST['ad_password'];
+            $obj = new admin();
+            $obj->Add_admin($fname, $lname, $phone, $salary, $email, $pass);
+        }
+
+
+        /*ADD competitions */
+        if($_GET['do'] == 'addcompitition'){
+            $name = $_POST['compname'];
+            $desc = $_POST['comdescription'];
+              $obj = new compitition();
+              $obj->Add_Compitition($name, $desc);
         }
 
 

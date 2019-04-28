@@ -62,20 +62,22 @@
     
 
     <div class="newform ">
-       
-  <form>
+       <?php
+       include '../Controller/cont.php';
+       ?>
+  <form action="addcompitition.php?do=addcompitition" method="post">
        <div class="form-group">
        <label for="compname">Competition Name:</label>
     <input type="text" class="form-control" id="compname" placeholder="Enter Competition Name" name="compname"required>
            
   </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
     <label for="compid">Competition ID:</label>
    
     <input type="text" class="form-control" id="compid" placeholder="Enter Competition ID" name="compid" required>
     
   </div>
-  
+   -->
  
   <div class="form-group">
       <label for="description">Description:</label>

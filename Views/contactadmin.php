@@ -58,15 +58,21 @@
     
   </ul>
 </nav><br><br>
-    
+    <?php
+    include '../Controller/cont.php';
+    ?>
 
     <div class="newform ">
-  <form>
-        <div class="form-group">
+  <form action="contactadmin.php?do=sendmail" method="post">
+  <div class="form-group">
     <label for="email "><i class="fa fa-at" ></i>Email:</label>
     <input type="email" class="form-control" id="email" placeholder="Enter E-Mail" name="ad_email" required>
-  
   </div>
+  <div class="form-group">
+    <label for="subject "><i class="fa fa-at" ></i>Subject:</label>
+    <input type="text" class="form-control" id="subject" placeholder="Subject" name="ad_subject" required>
+  </div>
+  
   <div class="form-group">
       <label for="fname"><i class="fa fa-envelope" ></i>Message:</label>
       <textarea type="text" class="form-control" id="message" placeholder="Message" name="ad_message" required></textarea>

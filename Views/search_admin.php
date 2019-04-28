@@ -1,24 +1,4 @@
-<?php
-include '../models/connection.php';
-$result = null;
-if (isset($_POST['search'])) {
-    $searchq = $_POST['search'];
-    $searchq = preg_replace("#[^0-9a-z]#i", "", $searchq);
 
-    $sql = "SELECT `game`, `day`, `time` FROM `time_table` WHERE `game` LIKE '%" . $searchq . "%' OR `day` LIKE '%" . $searchq . "%' OR `time` LIKE '%" . $searchq . "%'";
-    $result = mysqli_query($GLOBALS['conn'], $sql) or die("could not search!");
-    $count = mysqli_num_rows($sql);
-    if ($count == 0) {
-        $output = 'There was no search results';
-    } else {
-        while ($row = mysqli_fetch_array($result)) {
-            $game = $row['game'];
-            $day = $row['day'];
-            $time = $row['time'];
-        }
-    }
-}
-?>
 
 
 <!DOCTYPE html>
@@ -130,14 +110,21 @@ if (isset($_POST['search'])) {
                             <th> Day</th>
                             <th> Time</th>
                         </tr>
-                          <?php
-                          while ($row = mysqli_fetch_array($result)) {
-                              echo "<tr>";
-                              echo "<td>" . $row['game'] . "</td>";
-                              echo "<td>" . $row['day'] . "</td>";
-                              echo "<td>" . $row['time'] . "</td>";
-                              echo "</tr>";
-                          }
+                        <?php
+                          include '../Models/connection.php';
+                            if (isset($_POST['search'])) {
+                            $searchq = $_POST['search'];
+                            $searchq = preg_replace("#[^0-9a-z]#i", "", $searchq);
+                            $sql = "SELECT `game`, `day`, `time` FROM `time_table` WHERE `game` LIKE '%" . $searchq . "%' OR `day` LIKE '%" . $searchq . "%' OR `time` LIKE '%" . $searchq . "%'";
+                            $result = mysqli_query($GLOBALS['conn'], $sql) or die("could not search!");
+                                while ($row = mysqli_fetch_array($result)) {
+                                    echo "<tr>";
+                                    echo "<td>" . $row['game'] . "</td>";
+                                    echo "<td>" . $row['day'] . "</td>";
+                                    echo "<td>" . $row['time'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            }
                           ?>
                     </table>
 

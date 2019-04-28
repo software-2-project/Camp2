@@ -35,7 +35,7 @@
     </li>
 
 		<li class="nav-item">
-      <a class="nav-link" href="../models/reports.php"><i class="fa fa-report" ></i>reports</a>
+      <a class="nav-link" href="../Models/reports.php"><i class="fa fa-report" ></i>reports</a>
     </li>
 
     <!-- Dropdown -->
