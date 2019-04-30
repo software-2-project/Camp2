@@ -29,6 +29,9 @@
 				<li>
 					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
+				<li>
+					<a href="login.php"><span>L</span>ogin</a>
+				</li>
 			</ul>
 			<div>
 				<p>

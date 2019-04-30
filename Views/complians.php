@@ -53,7 +53,13 @@
        <li class="nav-item">
       <a class="nav-link" href="contactadmin.php"><i class="fa fa-comments" ></i>Contact</a>
     </li>
-    
+    <?php
+                                session_start();
+                                if (isset($_SESSION['email']))
+                                    echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
+								echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
+								
+				?>
   </ul>
 </nav><br><br>
 <div class="body">

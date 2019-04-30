@@ -165,7 +165,7 @@ if($_GET){
         if($_GET['do'] == 'addtrips'){
             $name = $_POST['tripname'];
             $desc = $_POST['tripdescription'];
-            $obj = new Trip();
+            $obj = new admin();
             $obj->addTrip($name,$desc);
             
         }
@@ -186,7 +186,7 @@ if($_GET){
         if($_GET['do'] == 'addcompitition'){
             $name = $_POST['compname'];
             $desc = $_POST['comdescription'];
-              $obj = new compitition();
+              $obj = new admin();
               $obj->Add_Compitition($name, $desc);
         }
 

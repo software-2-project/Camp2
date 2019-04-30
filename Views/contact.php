@@ -11,17 +11,27 @@
 		<div>
 			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
 			<ul>
-				<li>
+			<li>
 					<a href="index.php"><span>H</span>ome</a>
 				</li>
-				<li >
-					<a href="talent.php"><span>T</span>alent</a>
+				<li>
+					<a href="about.php"><span>A</span>bout</a>
 				</li>
+				<li>
+					<a href="programs.php"><span>P</span>rograms</a>
+				</li>
+				<li>
+					<a href="blog.php"><span>B</span>log</a>
+				</li>
+				<li>
+					<a href="staff.php"><span>S</span>taff</a>
+				</li>
+				<li>
 				<li class="selected">
 					<a href="contact.php"><span>C</span>ontact</a>
 				</li>
 				
-				<li>
+				<!-- <li>
 					<a href="reservations.php"><span>R</span>eservation</a>
 				</li>
 				<li>
@@ -29,7 +39,7 @@
 				</li>
 				<li>
                     <a href="search.php"><span>S</span>earch</a>
-                </li>
+                </li> -->
 				<!--<li>
 					<a href="about.php"><span>A</span>bout</a>
 				</li>
