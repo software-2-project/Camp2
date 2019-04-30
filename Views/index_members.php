@@ -29,9 +29,9 @@
 				<li>
 					<a href="#"><span>R</span>eservation</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="offers.php?do=offers"><span>O</span>ffers</a>
-				</li>
+				</li> -->
 				<li>
                 <a href="#"><span>S</span>earch</a>
                     </li>
