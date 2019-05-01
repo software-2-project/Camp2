@@ -56,7 +56,7 @@
 		<?php
 														session_start();
 														if (isset($_SESSION['email']))
-																echo " <li><a href='../models/logout.php'>Logout</a></li> ";
+																echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
 														echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
 		?>
   </ul>
