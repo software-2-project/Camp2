@@ -49,7 +49,11 @@ class DB_manager{
 
 	// << To select all data in specific table with condition >>
 
-	public function select_all($tableName , $condition){
+	public function select_all($tableName){
+		$this->query = "select * from `". $tableName ;
+		return $this->Execute_get_SelectQuery_data();
+	}
+	public function select_all_cond($tableName , $condition){
 		$this->query = "select * from `". $tableName . "` where " . $condition;
 		return $this->Execute_get_SelectQuery_data();
 	}

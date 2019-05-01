@@ -20,21 +20,6 @@ class competition extends reservation{
 		}
 }
 
-class halls extends reservation{
-		
-        public function get_hallavailable()
-        {
-            $q = "SELECT * FROM `halls`";
-            $val= mysqli_query($GLOBALS['conn'],$q);
-            return $val;
-        }
-
-        public function reserve_halls($id_user , $id_hall)
-        {
-            $q = "INSERT INTO `reservation`(`user_id`, `halls_id`) VALUES ($id_user , $id_hall)";
-            mysqli_query($GLOBALS['conn'] , $q);
-        }
-}
 
 class trips extends reservation{
 
@@ -52,17 +37,4 @@ class trips extends reservation{
     }
 }
 
-class parties extends reservation{
 
-        public function get_partyavailable()
-        {
-            $q   = "SELECT * FROM `parties` ";
-            $val = mysqli_query($GLOBALS['conn'],$q);
-            return $val;
-        }
-        public function reserve_parties($id_user,$id_party)
-        {
-            $q = "INSERT INTO `reservation`(`user_id`, `parties_id`) VALUES ($id_user , $id_party)";
-            mysqli_query($GLOBALS['conn'],$q);
-        }
-} 

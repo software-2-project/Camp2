@@ -11,7 +11,8 @@ include '../Models/contact_with_admin.php';
 include '../Models/trip.php';
 include '../Models/admin.php';
 include '../Models/compitition.php';
-
+include '../Models/database.php';
+$db = DB_manager::getInstance();
 if($_GET){
 /* Register */
     if($_GET['do']=='login')
@@ -108,8 +109,7 @@ if($_GET){
        /* Get competition */
 
         if($_GET['do'] == 'competition'){
-            $obj = new competition();
-            $val = $obj->get_comptetion();
+            $val = $db->select_All("competitions");
             foreach ($val as $value)
 			{
                 echo "<div style='text-align: center;padding: 20px;'>";
@@ -130,8 +130,7 @@ if($_GET){
         /* Get trips */
 
         if($_GET['do'] == 'trip'){
-            $obj = new trips();
-            $val = $obj->get_tripsavailable();
+            $val = $db->select_All("trips");
             foreach ($val as $value) 
 			   {
                 echo "<div style='text-align: center;padding: 20px;'>";
