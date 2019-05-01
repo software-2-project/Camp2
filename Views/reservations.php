@@ -27,9 +27,9 @@
 				<li class="selected">
 					<a href="reservations.php"><span>R</span>eservation</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="offers.php?do=offers"><span>O</span>ffers</a>
-				</li>
+				</li> -->
 				<li>  
 				   <a href="search.php"><span>S</span>earch</a>
 				</li>
@@ -53,13 +53,14 @@
 				<div class="reservation_area">
 					<div class="blog">
 						<h2>Reservaions</h2>
+						
 						<div class="first">
 							<h3>Please choose  your option</h3>
 							
                             <a class="sendd" href="reservations.php?do=competition">Compititions</a>
 						  	 <a class="sendd" href="reservations.php?do=trip">Trips</a>
 
-
+							  
 								
 						</div>
 						

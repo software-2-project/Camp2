@@ -5,7 +5,7 @@ require 'Contact-mail/PHPMailer-master/src/Exception.php';
 require 'Contact-mail/PHPMailer-master/src/OAuth.php';
 require 'Contact-mail/PHPMailer-master/src/POP3.php';
  class contactMail{ 
-     public function send_mail($name, $usr_mail, $subject, $body){
+     public function send_mail($usr_mail, $subject, $body){
          $mail = new PHPMailer\PHPMailer\PHPMailer();
          $mail->IsSMTP();
          $mail->SMTPAuth = true;
@@ -18,7 +18,7 @@ require 'Contact-mail/PHPMailer-master/src/POP3.php';
          $mail->SetFrom($usr_mail);
          $mail->Subject  = $subject;
          $mail->Body = $body;
-         $mail->addAddress($usr_mail,$name);
+         $mail->addAddress($usr_mail,"Summer Camp");
         //  $mail->Send();
          if(!$mail->Send())
          echo "<script type='text/javascript'>alert('submitted failed!')</script>".$mail->ErrorInfo;

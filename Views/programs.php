@@ -1,69 +1,92 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
+
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Programs - Summer Camp Website Template</title>
+	<title>Summer Camp </title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-	<div class="header">
-		<div>
-			<a href="index.php" id="logo"><img src="images/logo.png" alt="logo"></a>
-			<ul>
-				<li>
-					<a href="index.php"><span>H</span>ome</a>
-				</li>
-				<li>
-					<a href="about.php"><span>A</span>bout</a>
-				</li>
-				<li class="selected">
-					<a href="programs.php"><span>P</span>rograms</a>
-				</li>
-				<li>
-					<a href="blog.php"><span>B</span>log</a>
-				</li>
-				<li>
-					<a href="staff.php"><span>S</span>taff</a>
-				</li>
-				<li>
-					<a href="contact.php"><span>C</span>ontact</a>
-				</li>
-			</ul>
-			<div>
-				<p>
-					<span>C</span>amp <span>S</span>tarts <span>I</span>n: <span><span>228</span></span> <span>D</span>ays
-				</p>
-			</div>
-		</div>
-	</div>
+	  <!-----------------Nav Bar Stat    -------------->
+        <div class="navbar">
+    	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand text-white" href="index_admin.php"> <img   src="Images/logo.png"  alt="logo"  style="width:80px; height:40px;" ></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav  ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.php"><i class="fa fa-home" ></i>Home</a>
+    </li>
+
+      <li class="nav-item">
+      <a class="nav-link" href="about.php"><i class="fa fa-search" ></i>About</a>
+    </li>
+
+    
+    
+        <li class="nav-item">
+      <a class="nav-link" href="programs.php"><i class="fa fa-list" ></i>Programms</a>
+    </li>
+       
+        <li class="nav-item">
+      <a class="nav-link" href="staff.php"><i class="fa fa-users" ></i>Staff</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="contact.php"><i class="fa fa-phone" ></i>Contact</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="login.php"><i class="fa fa-sign-in-alt" ></i>Login</a>
+    </li>
+		
+  </ul>
+</nav><br><br>
+    </div>
+     <!-----------------Nav Bar Ended   -------------->
 	<div class="body">
 		<div>
 			<div>
 				<div>
 					<div class="programs">
 						<h2>SUMMER CAMP PROGRAMS</h2>
-						<div class="first">
-							<ul>
-								<li class="selected">
-									<a href="programs.html">OUR MISSION</a>
-								</li>
-								<li>
-									<a href="competition.html">TEAM COMPETITION</a>
-								</li>
-								<li>
-									<a href="activities.html">ACTIVITIES</a>
-								</li>
-							</ul>
-						</div>
+						
 						<div>
-							<h3>We Have Free Templates for Everyone</h3>
+							
 							<p>
-								Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What's more, they're absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the <a href="http://www.freewebsitetemplates.com/about/terms">Terms of Use</a>. You can even remove all our links if you want to.
-							</p>
-							<h3>Be part of our community</h3>
-							<p>
-								If you're experiencing issues and concerns about this website template, join the discussion <a href="http://www.freewebsitetemplates.com/forums/">on our forums</a> and meet other people in the community who share the same interests with you.
+								
+07h30 
+Students are woken by Les Elfes monitors for Breakfast
+<br>08h45
+Groups meet their monitors for a morning meeting where they are briefed on the clothing and equipment they will need for the day & perhaps a warm-up activity
+<br>09h00 – 11h00
+Language classes, studying in small groups with written work and group tasks
+<br>11h00 – 12h00
+Optional Activities: Golf, Horse Riding, Private Language Classes, Tennis Lesson
+<br>12h00-12h45
+BBQ Lunch at camp with all of the groups
+<br>12h45-16h15
+Afternoon activities, split by age group: Mountain Biking, Rock Climbing, Nature Hike or an Afternoon down by the Lake with Kayaking, Banana Boating, Wake Boarding and Stand up Paddle Boarding
+<br>16h30-17h00
+Shower Time & Relaxation
+<br>17h00-18h45
+Optional Activities – Football, Basketball, Table Tennis, Trampoline etc.
+<br>19h00-20h00
+Dinner at camp, perhaps Fondue Night, Peppered Beef Ragout with Rosti or Cheese burgers with Juan’s secret sauce
+<br>20h00
+Evening Activities: Les Elfes Clubs Night, select a workshop from: orienteering treasure hunt, bushcraft – learning to build a shelter, cooking club, photography club or magicians-in-training
 							</p>
 						</div>
 					</div>
@@ -71,51 +94,62 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div>
-			<div>
-				<h3>NEWSLETTER</h3>
-				<p>
-					Nulla porttitor vulputate elit, trist ique malesuada sem.
-				</p>
-				<form action="index.html">
-					<input type="text" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
-					<input type="submit" value="Get">
-				</form>
-			</div>
-			<div>
-				<h4>LATEST BLOG</h4>
-				<ul>
-					<li>
-						<p>
-							<a href="blog.html">Phasellus parea ut di tincidunt blandit nisi ut pellentesque.</a>
-						</p>
-						<span>11/07/2011</span>
-					</li>
-					<li>
-						<p>
-							<a href="blog.html">Donec dictum semper augue, ut consectetur magna posuere eget.</a>
-						</p>
-						<span>11/03/2011</span>
-					</li>
-					<li>
-						<p>
-							<a href="blog.html">Cum sociis natoque penatibus et magnis dis parturient.</a>
-						</p>
-						<span>11/27/2011</span>
-					</li>
-				</ul>
-			</div>
-			<div class="connect">
-				<h4>FOLLOW US:</h4>
-				<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">Facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">Twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" class="google">Google+</a>
-			</div>
-		</div>
-		<div>
-			<p>
-				Summer Camp &#169; 2011 | All Rights Reserved
-			</p>
-		</div>
-	</div>
+	    <!------------------Footer--------------------------->
+	         <!-- Footer -->
+<footer class="foote page-footer font-small cyan ">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+       <div class="col-md-12 py-5">
+          <center> <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic footericons" href="#">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic footericons" href="#" >
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic footericons" href="#">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic footericons" href="#">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic footericons" href="#">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic footericons" href="#">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div></center>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+     
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+    
 </body>
 </html>

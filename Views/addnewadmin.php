@@ -56,16 +56,18 @@
 		<?php
 														session_start();
 														if (isset($_SESSION['email']))
-																echo " <li><a href='../models/logout.php'>Logout</a></li> ";
+																echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
 														echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
 		?>
   </ul>
 </nav><br><br>
-
-
+<?php
+include '../Controller/cont.php';
+?>
+  
     <div class="newform ">
    <center> <h3 class="text-danger">Add New Admin</h3></center>
-    <form action="" class=" was-validated">
+    <form action="addnewadmin.php?do=addadmin" method="post" class=" was-validated">
   <div class="form-group">
     <label for="fname">First Name:</label>
     <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="ad_fname"required>

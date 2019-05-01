@@ -53,11 +53,43 @@
        <li class="nav-item">
       <a class="nav-link" href="contactadmin.php"><i class="fa fa-comments" ></i>Contact</a>
     </li>
-    
+    <?php
+                                session_start();
+                                if (isset($_SESSION['email']))
+                                    echo " <li><a href='../Models/logout.php'>Logout</a></li> ";
+								echo '<li class="user-profile"><a href="#">' . $_SESSION['email'] . '</a></li>';
+								
+				?>
   </ul>
 </nav><br><br>
-    
-
+<div class="body">
+        <div >
+            <div id="talent">
+<table>
+                        <tr>
+                            <th style="color:#ff8000;font-size:20px;padding-left:15px"> name</th>
+                            <th style="color:#ff8000;font-size:20px;padding-left:15px"> email</th>
+                            <th style="color:#ff8000;font-size:20px;padding-left:15px"> subject</th>
+                            <th style="color:#ff8000;font-size:20px;padding-left:15px"> message</th>
+                        </tr>
+                          <?php
+                          include '../Models/connection.php';
+                            $sql = "SELECT * FROM `ContactWithAdmin`";
+                            $result = mysqli_query($GLOBALS['conn'], $sql) or die("could not search!");
+                                while ($row = mysqli_fetch_array($result)) {
+                                    echo "<tr>";
+                                    echo "<td style=padding-left:15px>" . $row['name'] . "</td>";
+                                    echo "<td style=padding-left:15px>" . $row['email'] . "</td>";
+                                    echo "<td style=padding-left:15px>" . $row['subject'] . "</td>";
+                                    echo "<td style=padding-left:15px>" . $row['message'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            
+                          ?>
+                    </table>
+                              </div>
+                              </div>
+                              </div>        
 
 </body>
 

@@ -21,17 +21,7 @@ class App_user extends UserData{
           return $row;
     }
 
-    public function reportofcoach()
-    {
-      $row2=array();
-     $query = "SELECT `co_fname` FROM `coach` WHERE 1";
-          if ($run = mysqli_query($GLOBALS['conn'], $query))
-          {
-          while($row2[]=mysqli_fetch_assoc($run)){
-          }}
-
-          return $row2;
-    }
+   
     public function reportofmember()
     {
       $row3=array();
