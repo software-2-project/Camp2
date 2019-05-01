@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Staff Application - Summer Camp Website Template</title>
+	<title>Staff Application - Summer Camp Website</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
